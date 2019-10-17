@@ -1,0 +1,3 @@
+bassem_first_homepage:
+    path:     /
+    defaults: { _controller: BassemFirstBundle:Default:index }

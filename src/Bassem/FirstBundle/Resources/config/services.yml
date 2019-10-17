@@ -1,0 +1,4 @@
+services:
+#    bassem_first.example:
+#        class: Bassem\FirstBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]
