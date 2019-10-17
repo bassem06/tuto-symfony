@@ -1,0 +1,17 @@
+etape 1 : composer create-project symfony/framework-standard-edition my_project_name "3.4"
+etape 2 : composer.json :
+		 "autoload": {
+			"psr-4": {
+			    "": "src/"
+			},
+			"classmap": [ "app/AppKernel.php", "app/AppCache.php" ]
+		    },
+etape 3 : config.yml:
+	framework:
+    		templating: { engines: ['twig'] }
+etape 4 : php bin/console cache:clear
+	  composer dump-autoload
+
+etape 5 : creation bundle :
+		php bin/console generate:bundle
+
