@@ -10,4 +10,14 @@ class DefaultController extends Controller
     {
         return $this->render('BassemFirstBundle:Default:index.html.twig');
     }
+
+    public function premierAction($nom)
+    {
+
+        return $this->render('BassemFirstBundle:Default:premier.html.twig',
+    array(
+        "nom"=>$nom
+    )
+    );
+    }
 }
